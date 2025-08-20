@@ -22,7 +22,9 @@ services:
     networks:
       - perplexica-network
     volumes:
-      - backend-dbstore:/home/perplexica
+      - backend-dbstore:/home/perplexica/data
+      - uploads:/home/perplexica/uploads
+      - ./config.toml:/home/perplexica/config.toml
     restart: unless-stopped
 
 networks:
