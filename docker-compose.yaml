@@ -22,7 +22,7 @@ services:
     networks:
       - perplexica-network
     volumes:
-      - perplexica-store:/home/perplexica
+      - backend-dbstore:/home/perplexica
     restart: unless-stopped
 
 networks:
